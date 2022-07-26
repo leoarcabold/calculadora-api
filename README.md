@@ -10,8 +10,6 @@ As fórmulas, por sua vez, vêm para facilitar o seu dia a dia. Na correria da r
 Como saber qual fórmula usar em matemática financeira?
 Para saber qual fórmula usar em cada situação é preciso, antes de tudo, entendê-las. Desse modo, é possível identificar que fórmula vem a calhar na sua necessidade atual.
 
-Dito isso, vamos a elas?
-
 Quais as principais fórmulas da matemática financeira?
 Eu fiz um compilado das fórmulas mais usadas no seu dia a dia. De uma forma ou de outra, é bastante provável que você tenha que lidar com elas com bastante frequência. 
 
@@ -45,15 +43,7 @@ M = C . (1 +  i)t
 
 J = M – C
 
-Os juros compostos são os juros que se aplicam sobre outros juros. Achou confuso? Vou colocar de outra forma: enquanto os juros simples são aplicados apenas no valor inicial, os compostos são aplicados ao fim de cada período, somando-se aos juros aplicados anteriormente.
-
-Relação entre juros e progressões
-
-Aqui, há duas relações:
-
-Juros simples -> progressão aritmética;
-Juros compostos -> progressão geométrica.
-Na primeira, a sequência de valores apresenta uma diferença constante entre os números consecutivos. Já na progressão geométrica, os números são obtidos ao multiplicar a razão pelo último número da sequência.
+Os juros compostos são os juros que se aplicam sobre outros juros. Vou colocar de outra forma: enquanto os juros simples são aplicados apenas no valor inicial, os compostos são aplicados ao fim de cada período, somando-se aos juros aplicados anteriormente.
 
 4 – Taxas equivalentes
 1 + ia = (1 + im)t
@@ -88,44 +78,25 @@ Considere:
 P: o valor da porcentagem.
 Calcular a porcentagem de algo é uma das tarefas mais básicas e utilizadas no dia a dia. A porcentagem de um juros, um desconto, um acréscimo… Tudo isso indica porcentagem! 
 
-Como eu disse, a porcentagem pode aparecer na sua rotina de diferentes formas, em diferentes situações. Por isso, a melhor forma de saber lidar com todas elas é através de muitos exercícios. Com eles, é improvável que, na hora de agir, você fique em dúvida sobre como aplicar esse conhecimento.
-
 8 – Variação percentual
-i = V final – V inicial / V inicial . 100%
+É a comparação ou variação entre dois valores em um espaço de tempo. Pode ser de acréscimo ou decréscimo. A fórmula para calcular a variação percentual é:
 
-Considere:
+Variação = Valor final - valor inicial x 100
+           Valor inicial
 
-V: o valor que está sendo analisado.
-Quase com a mesma lógica da fórmula anterior, esta serve para calcular qual é a variação exata de um percentual.
+Exemplo: 
 
-9 – Razão e proporção
-Razão: A/B
+Qual a variação percentual de um produto que antes custava R$ 15 e agora custa R$ 20?
 
-Proporção: A/B = C/D
+Variação = (20 - 15 x 100)/17
 
-Em resumo, a razão é a comparação entre dois números, o coeficiente. Já a proporção é a igualdade entre duas razões – ou quando ambas possuem o mesmo resultado. 
+Variação = 5/15 x 100
 
-10 – Regras de três simples e compostas
-A = B
+Variação = 33,33%
 
-C = X
+Desta forma, o valor do produto variou 33,33%. 
 
-Aqui, você cruza informações para descobrir um valor. Por exemplo: imagine que após vender 50 produtos, você lucrou R$2.500,00. Quanto, então, você lucraria se vendesse 60? 
-
-50 = 2.500
-
-60 = X
-
-60 . 2.500 = 150.000
-
-150.000 / 50 = 3.000
-
-Ou seja, você lucraria R$3.000.
-
-11 – Frações
-As frações existem de várias formas: equivalentes, aparentes, mistas, próprias e impróprias. Em resumo, as frações ainda podem ser explicadas da forma como aprendemos na escola: se uma pizza é dividida em 8 fatias, então, cada fatia é ⅛ de pizza. 
-
-12 – Desconto simples racional
+9 – Desconto simples racional
 A = N / 1 + i.n
 
 Dr = N – A
@@ -139,7 +110,7 @@ i = taxa de desconto;
 n = quantidade de períodos.
 Esse desconto também pode ser chamado de “desconto por dentro” ou “desconto real”. Resumidamente, é o equivalente ao juro produzido pelo valor atual de um título. Considerando, ainda, a taxa fixada e o tempo correspondente. 
 
-13 – Desconto simples comercial
+10 – Desconto simples comercial
 d = N * i * n
 
 ou
