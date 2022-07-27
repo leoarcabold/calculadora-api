@@ -6,19 +6,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.calculadorafinanceira.model.TaxaEquivalente;
+import com.calculadorafinanceira.model.JuroComposto;
 
 @RestController
-@RequestMapping(value = "/calculadora/taxaequivalente")
+@RequestMapping(value = "/calculadora/jurocomposto")
 public class JuroCompostoController {
 
 
-	@GetMapping("/{tipoTaxa}&{taxa}&{prazo}")
+	@GetMapping("/{capital}&{taxa}&{prazo}")
 	@ResponseBody
-	public TaxaEquivalente CalculaTaxaEquivalente(
-			@PathVariable String tipoTaxa,
+	public JuroComposto CalculaTaxaEquivalente(
+			@PathVariable Float capital,
 			@PathVariable Float taxa,
 			@PathVariable Float prazo) {
-		return new TaxaEquivalente(tipoTaxa,taxa,prazo);
+		return new JuroComposto(capital,taxa,prazo);
 		}
 }
