@@ -1,0 +1,13 @@
+package com.calculadorafinanceira;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CalculadoraFinanceiraApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CalculadoraFinanceiraApiApplication.class, args);
+	}
+
+}
