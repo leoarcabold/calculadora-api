@@ -12,32 +12,14 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Porcentagem {
 	/*
-	 * Fómula para o cálculo da taxa equivalente: 1+ia = (1+im)^t) ia = taxa anual
-	 * im = taxa mensal t = prazo
+	 * Fómula para o cálculo de 
+	 * porcentagem: P = P/100
 	 */
 
-	private Float ia;
-	private Float im;
-	private Float prazo;
-	private String tipoTaxa;
 	private Float taxa;
 
-	public Porcentagem(String tipoTaxa, Float taxa, Float prazo) {
-		this.tipoTaxa = tipoTaxa;
-		this.taxa = taxa;
-		this.prazo = prazo;
-		validaTaxa(tipoTaxa, taxa);
+	public Porcentagem(Float taxa) {
+		this.taxa = taxa/100;
 	}
 
-	public void validaTaxa(String tipoTaxa, Float taxa) {
-		System.out.println(tipoTaxa.equalsIgnoreCase("im"));
-		if (tipoTaxa.equalsIgnoreCase("ia")) {
-			this.im = ((float) Math.pow((1 + taxa / 100), 1 / prazo) - 1) * 100;
-			this.ia = taxa;
-		}
-		if (tipoTaxa.equalsIgnoreCase("im")) {
-			this.ia = ((float) Math.pow((1 + taxa / 100), prazo) - 1) * 100;
-			this.im = taxa;
-		}
-	}
 }

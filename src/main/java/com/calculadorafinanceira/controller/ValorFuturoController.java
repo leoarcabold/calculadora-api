@@ -12,8 +12,10 @@ import com.calculadorafinanceira.model.ValorFuturo;
 public class ValorFuturoController {
 
 	@PostMapping
-	public ValorFuturo CalculaValorFuturo(@RequestParam(name = "capital") Float capital,
-			@RequestParam(name = "taxa") Float taxa, @RequestParam(name = "prazo") Float prazo) {
+	public ValorFuturo CalculaValorFuturo(
+			@RequestParam(name = "capital") Float capital,
+			@RequestParam(name = "taxa") Float taxa, 
+			@RequestParam(name = "prazo") Float prazo) {
 		return new ValorFuturo(capital, taxa, prazo);
 	}
 }
