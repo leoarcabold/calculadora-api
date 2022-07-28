@@ -9,7 +9,7 @@ import com.calculadorafinanceira.model.ValorFuturo;
 
 @RestController
 @RequestMapping(value = "/calculadora/valorfuturo")
-public class ValorPercentualController {
+public class VariacaoPercentualController {
 
 	@PostMapping
 	public ValorFuturo CalculaValorFuturo(
