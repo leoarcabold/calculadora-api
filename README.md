@@ -97,8 +97,9 @@ Variação = 33,33%
 Desta forma, o valor do produto variou 33,33%. 
 
 9 – Desconto simples racional
-A = N / 1 + i.n
+O desconto simples racional é o chamado de desconto por dentro, ou desconto real. O valor do desconto é equivalente aos juros produzidos pelo valor atual do título, a uma taxa de juros e tempo correspondentes ao desconto.
 
+A = N / (1 + i.n)
 Dr = N – A
 
 Considere:
@@ -108,7 +109,33 @@ A = valor atual;
 N = valor nominal;
 i = taxa de desconto;
 n = quantidade de períodos.
-Esse desconto também pode ser chamado de “desconto por dentro” ou “desconto real”. Resumidamente, é o equivalente ao juro produzido pelo valor atual de um título. Considerando, ainda, a taxa fixada e o tempo correspondente. 
+
+Exemplo:
+
+Uma Empresa deseja descontar hoje uma duplicata de valor nominal igual a R$ 10.000,00, com vencimento para daqui a 3 meses. Considerando que o banco cobra uma taxa de 2% a.m., calcular o valor do desconto simples racional.
+
+Onde:
+
+Dr = desconto realizado
+A = valor atual
+N = valor nominal
+i = taxa de desconto
+n = quantidade de períodos
+
+Exemplo
+
+Uma Empresa deseja descontar hoje uma duplicata de valor nominal igual a R$ 10.000,00, com vencimento para daqui a 3 meses. Considerando que o banco cobra uma taxa de 2% a.m., calcule o valor do desconto simples racional.
+
+Resolução
+
+Temos:
+N = R$ 10.000,00
+i = 2% a.m.
+n = 3
+Calculando o valor atual:
+A = N / (1 + i.n) ➡️ A = 10000 / (1 + 0,02 . 3) ➡️ A = 9433,96
+Calculando o desconto realizado: 
+Dr = N – A ➡️ Dr = 10000 - 9433,96 ➡️ Dr = 566,0
 
 10 – Desconto simples comercial
 d = N * i * n
