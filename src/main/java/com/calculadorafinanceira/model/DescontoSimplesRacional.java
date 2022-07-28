@@ -29,7 +29,7 @@ public class DescontoSimplesRacional {
 
 	public DescontoSimplesRacional(Float N, Float i, Float n) {
 		this.N = N;
-		this.i = i;
+		this.i = i/100;
 		this.n = n;
 		this.A = (N/(1+i*n));
 		this.Dr = N-A;
