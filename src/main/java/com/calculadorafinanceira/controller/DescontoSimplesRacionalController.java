@@ -13,9 +13,11 @@ public class DescontoSimplesRacionalController {
 
 	@PostMapping
 	public DescontoSimplesRacional CalculoDescontoSimplesRacional(
-			@RequestParam(name = "N") Float N,
-			@RequestParam(name = "i") Float i, 
-			@RequestParam(name = "n") Float n){
-		return new DescontoSimplesRacional(N,i, n);
+			@RequestParam(name = "valorNominal") Float valorNominal,
+			@RequestParam(name = "taxa") Float taxa, 
+			@RequestParam(name = "prazo") Float prazo) {
+		System.out.println(valorNominal+" "+taxa+" "+prazo);
+		System.out.println((valorNominal/(1+taxa*prazo)));
+		return new DescontoSimplesRacional(valorNominal, taxa, prazo);
 	}
 }

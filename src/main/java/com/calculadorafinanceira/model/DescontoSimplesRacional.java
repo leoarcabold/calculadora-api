@@ -13,6 +13,7 @@ import lombok.Setter;
 public class DescontoSimplesRacional {
 	/*
 	 * Fómula para o cálculo de
+	 * desconto simples racional: A=N/(1+i*n)
 	 * Dr = N -A 
 	 * Dr = desconto realizado
 	 * A = valor atual
@@ -21,17 +22,17 @@ public class DescontoSimplesRacional {
 	 * n = quantidade de períodos
 	 */
 
-	private Float Dr;
-	private Float A;
-	private Float N;
-	private Float i;
-	private Float n;
+	private Float descontoRealizado;
+	private Float valorAtual;
+	private Float valorNominal;
+	private Float taxa;
+	private Float prazo;
 
-	public DescontoSimplesRacional(Float N, Float i, Float n) {
-		this.N = N;
-		this.i = i/100;
-		this.n = n;
-		this.A = (N/(1+i*n));
-		this.Dr = N-A;
+	public DescontoSimplesRacional(Float valorNominal, Float taxa, Float prazo) {
+		this.valorNominal = valorNominal;
+		this.taxa = taxa/100;
+		this.prazo = prazo;
+		this.valorAtual = (valorNominal/(1+(taxa/100)*prazo));
+		this.descontoRealizado = valorNominal - valorAtual;
 	}
 }
