@@ -13,7 +13,7 @@ import lombok.Setter;
 public class VariacaoPercentual {
 	/*
 	 * Fómula para o cálculo de
-	 * variação percentual: V = (vf-vi)/100
+	 * variação percentual: V = ((vf-vi)/vi)/100
 	 * V = variação
 	 * vf = valor final
 	 * vi = valor inicial
@@ -29,7 +29,7 @@ public class VariacaoPercentual {
 	public VariacaoPercentual (Float valorFinal,Float valorInicial) {
 		this.valorFinal = valorFinal;
 		this.valorInicial = valorInicial;
-		this.variacao = (valorFinal-valorInicial)*100;
+		this.variacao = ((valorFinal-valorInicial)/valorInicial)*100;
 	}
 	
 }

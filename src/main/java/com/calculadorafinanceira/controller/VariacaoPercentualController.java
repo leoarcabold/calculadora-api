@@ -6,16 +6,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.calculadorafinanceira.model.ValorFuturo;
+import com.calculadorafinanceira.model.VariacaoPercentual;
 
 @RestController
-@RequestMapping(value = "/calculadora/valorfuturo")
+@RequestMapping(value = "/calculadora/variacaopercentual")
 public class VariacaoPercentualController {
 
 	@PostMapping
-	public ValorFuturo CalculaValorFuturo(
-			@RequestParam(name = "capital") Float capital,
-			@RequestParam(name = "taxa") Float taxa, 
-			@RequestParam(name = "prazo") Float prazo) {
-		return new ValorFuturo(capital, taxa, prazo);
+	public VariacaoPercentual CalculoVariacaoPercentual(
+			@RequestParam(name = "valorFinal") Float valorFinal,
+			@RequestParam(name = "valorInicial") Float valorInicial) {
+		return new VariacaoPercentual(valorFinal, valorInicial);
 	}
 }

@@ -12,32 +12,26 @@ import lombok.Setter;
 @NoArgsConstructor
 public class DescontoSimplesRacional {
 	/*
-	 * Fómula para o cálculo da taxa equivalente: 1+ia = (1+im)^t) ia = taxa anual
-	 * im = taxa mensal t = prazo
+	 * Fómula para o cálculo de
+	 * Dr = N -A 
+	 * Dr = desconto realizado
+	 * A = valor atual
+	 * N = valor nominal
+	 * i = taxa de desconto
+	 * n = quantidade de períodos
 	 */
 
-	private Float ia;
-	private Float im;
-	private Float prazo;
-	private String tipoTaxa;
-	private Float taxa;
+	private Float Dr;
+	private Float A;
+	private Float N;
+	private Float i;
+	private Float n;
 
-	public DescontoSimplesRacional(String tipoTaxa, Float taxa, Float prazo) {
-		this.tipoTaxa = tipoTaxa;
-		this.taxa = taxa;
-		this.prazo = prazo;
-		validaTaxa(tipoTaxa, taxa);
-	}
-
-	public void validaTaxa(String tipoTaxa, Float taxa) {
-		System.out.println(tipoTaxa.equalsIgnoreCase("im"));
-		if (tipoTaxa.equalsIgnoreCase("ia")) {
-			this.im = ((float) Math.pow((1 + taxa / 100), 1 / prazo) - 1) * 100;
-			this.ia = taxa;
-		}
-		if (tipoTaxa.equalsIgnoreCase("im")) {
-			this.ia = ((float) Math.pow((1 + taxa / 100), prazo) - 1) * 100;
-			this.im = taxa;
-		}
+	public DescontoSimplesRacional(Float N, Float i, Float n) {
+		this.N = N;
+		this.i = i;
+		this.n = n;
+		this.A = (N/(1+i*n));
+		this.Dr = N-A;
 	}
 }
