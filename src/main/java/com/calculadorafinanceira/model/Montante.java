@@ -1,10 +1,7 @@
 package com.calculadorafinanceira.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.stereotype.Component;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

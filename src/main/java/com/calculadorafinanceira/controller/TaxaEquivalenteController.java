@@ -1,8 +1,8 @@
 package com.calculadorafinanceira.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.calculadorafinanceira.model.TaxaEquivalente;
@@ -12,11 +12,11 @@ import com.calculadorafinanceira.model.TaxaEquivalente;
 public class TaxaEquivalenteController {
 
 
-	@GetMapping("/{tipoTaxa}&{taxa}&{prazo}")
+	@GetMapping
 	public TaxaEquivalente CalculoTaxaEquivalente(
-			@PathVariable String tipoTaxa,
-			@PathVariable Float taxa,
-			@PathVariable Float prazo) {
+			@RequestParam(name = "tipoTaxa") String tipoTaxa,
+			@RequestParam(name = "taxa") Float taxa,
+			@RequestParam(name = "prazo") Float prazo) {
 		return new TaxaEquivalente(tipoTaxa,taxa,prazo);
 		}
 }

@@ -12,32 +12,26 @@ import lombok.Setter;
 @NoArgsConstructor
 public class DescontoSimplesComercial {
 	/*
-	 * Fómula para o cálculo da taxa equivalente: 1+ia = (1+im)^t) ia = taxa anual
-	 * im = taxa mensal t = prazo
+	 * Fómula para o cálculo do desconto
+	 * simples comercial: d = N * i * n
+	 * d = valor do desconto
+	 * N = valor nominal
+	 * i = taxa
+	 * n = tempo
+	 * A = valor atual
 	 */
 
-	private Float ia;
-	private Float im;
-	private Float prazo;
-	private String tipoTaxa;
+	private Float desconto;
+	private Float valorNominal;
 	private Float taxa;
+	private Float tempo;
+	private Float valorAtual;
 
-	public DescontoSimplesComercial(String tipoTaxa, Float taxa, Float prazo) {
-		this.tipoTaxa = tipoTaxa;
-		this.taxa = taxa;
-		this.prazo = prazo;
-		validaTaxa(tipoTaxa, taxa);
-	}
-
-	public void validaTaxa(String tipoTaxa, Float taxa) {
-		System.out.println(tipoTaxa.equalsIgnoreCase("im"));
-		if (tipoTaxa.equalsIgnoreCase("ia")) {
-			this.im = ((float) Math.pow((1 + taxa / 100), 1 / prazo) - 1) * 100;
-			this.ia = taxa;
-		}
-		if (tipoTaxa.equalsIgnoreCase("im")) {
-			this.ia = ((float) Math.pow((1 + taxa / 100), prazo) - 1) * 100;
-			this.im = taxa;
-		}
+	public DescontoSimplesComercial(Float valorNominal, Float taxa, Float tempo) {
+		this.valorNominal = valorNominal;
+		this.taxa = (taxa/100)/30;
+		this.tempo = tempo;
+		this.desconto = valorNominal * (taxa/100/30) * tempo;
+		this.valorAtual = valorNominal - desconto;
 	}
 }

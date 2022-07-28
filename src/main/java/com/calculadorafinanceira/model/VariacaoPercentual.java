@@ -1,7 +1,7 @@
 package com.calculadorafinanceira.model;
 
 import org.springframework.stereotype.Component;
-import java.lang.Math;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

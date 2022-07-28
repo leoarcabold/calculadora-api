@@ -1,8 +1,8 @@
 package com.calculadorafinanceira.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,12 +13,12 @@ import com.calculadorafinanceira.model.JuroSimples;
 public class JurosSimplesController {
 
 
-	@GetMapping("/{capital}&{taxa}&{prazo}")
+	@GetMapping
 	@ResponseBody
 	public JuroSimples CalculoJuroSimples(
-			@PathVariable Float capital,
-			@PathVariable Float taxa,
-			@PathVariable Integer prazo) {
+			@RequestParam(name = "capital") Float capital,
+			@RequestParam(name = "taxa") Float taxa,
+			@RequestParam(name = "prazo") Integer prazo) {
 		return new JuroSimples(capital,taxa,prazo);
 		}
 }

@@ -1,6 +1,6 @@
 package com.calculadorafinanceira.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,7 +11,7 @@ import com.calculadorafinanceira.model.DescontoSimplesRacional;
 @RequestMapping(value = "/calculadora/descontosimplesracional")
 public class DescontoSimplesRacionalController {
 
-	@PostMapping
+	@GetMapping
 	public DescontoSimplesRacional CalculoDescontoSimplesRacional(
 			@RequestParam(name = "valorNominal") Float valorNominal,
 			@RequestParam(name = "taxa") Float taxa, 
