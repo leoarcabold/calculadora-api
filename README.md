@@ -1,3 +1,5 @@
+<img src="https://github.com/leoarcabold/calculadora-financeira-api/blob/main/img/banner.jpg">
+
 # API Calculadora Financeira
 
 Para que servem as fórmulas em matemática financeira?
