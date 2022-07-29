@@ -1,4 +1,4 @@
-<img src="https://github.com/leoarcabold/calculadora-financeira-api/blob/main/img/banner.jpg">
+<img src="https://github.com/leoarcabold/calculadora-financeira-api/blob/main/img/banner.jpg"> 
 
 # API Calculadora Financeira
 
@@ -12,7 +12,9 @@ Através das fórmulas de matemática financeira, é possível ter uma visão am
 As fórmulas, por sua vez, vêm para facilitar o seu dia a dia. Na correria da rotina, com tanto para se fazer, elas representam um atalho para essas informações. Quais as principais fórmulas da matemática financeira?
 Eu fiz um compilado das fórmulas mais usadas no seu dia a dia. De uma forma ou de outra, é bastante provável que você tenha que lidar com elas com bastante frequência. 
 
+
 ### Funcionalidades da API
+##
 A API Calculadora Financeira é um serviço que fornece solução para os seguintes cálculos financeiros:
 * Cálculo Desconto Simples Comercial
 * Cálculo Desconto Simples Racional
@@ -28,19 +30,24 @@ A API Calculadora Financeira é um serviço que fornece solução para os seguin
     
 [<img src="https://github.com/leoarcabold/calculadora-financeira-api/blob/main/img/button_formulas-matematicas.png" width="180" height="30" align="midle"  />](https://github.com/leoarcabold/calculadora-financeira-api/blob/main/descritivo-formula.md)
 
-
+<br>
+<br>
 
 ### Clone o código-fonte.
-
+##
 `git clone https://github.com/leoarcabold/calculadora-financeira-api.git`
 
+<br>
+<br>
 
 ### Ver Documentação
+##
 
 [![Ver a Documentação Completa](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/20935330/UzXXND9F)
 
-
-
+<br>
+<br>
+<br>
 
 <img src="https://github.com/leoarcabold/calculadora-financeira-api/blob/main/img/postman.jpg">
 
