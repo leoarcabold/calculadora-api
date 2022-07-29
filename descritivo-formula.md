@@ -1,5 +1,3 @@
-<img src="https://github.com/leoarcabold/calculadora-financeira-api/blob/main/img/banner.jpg">
-
 #### 1 – Montante
 O montante é o valor que considera o capital inicial, mais os juros aplicados sobre ele. Quando o pagamento de uma dívida atrasa, por exemplo, é essa a fórmula que você deve usar para saber qual o valor atual dessa dívida, já que ela terá a sua quantia alterada devido à aplicação de juros.
 
