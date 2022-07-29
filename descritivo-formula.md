@@ -1,39 +1,11 @@
 <img src="https://github.com/leoarcabold/calculadora-financeira-api/blob/main/img/banner.jpg">
 
-# API Calculadora Financeira
-
-Para que servem as fórmulas em matemática financeira?
-Em uma empresa, os números significam muita coisa. Para resumir aqui, posso dizer que eles representam a saúde do negócio. Qual tem sido o lucro mensal do lugar? Quanto dinheiro tem saído? Há prejuízos? Possíveis gastos que podem ser cortados? Dívidas que precisam ser pagas? A resposta para tudo isso são números.
-
-Através das fórmulas de matemática financeira, é possível ter uma visão ampla e precisa do que está acontecendo na empresa. Por consequência, é possível saber como administrar melhor a companhia – e o seu dinheiro.
-
-As fórmulas, por sua vez, vêm para facilitar o seu dia a dia. Na correria da rotina, com tanto para se fazer, elas representam um atalho para essas informações. Quais as principais fórmulas da matemática financeira?
-Eu fiz um compilado das fórmulas mais usadas no seu dia a dia. De uma forma ou de outra, é bastante provável que você tenha que lidar com elas com bastante frequência. 
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/20935330-787ad4ed-8d4b-4528-a3cc-8961dfc7cced?action=collection%2Ffork&collection-url=entityId%3D20935330-787ad4ed-8d4b-4528-a3cc-8961dfc7cced%26entityType%3Dcollection%26workspaceId%3Df9ad812c-0284-4ca6-be69-d25c7a98d505)
-
->Clone o código-fonte.
-
-`git clone https://github.com/leoarcabold/calculadora-financeira-api.git`
-
-
-
 #### 1 – Montante
 O montante é o valor que considera o capital inicial, mais os juros aplicados sobre ele. Quando o pagamento de uma dívida atrasa, por exemplo, é essa a fórmula que você deve usar para saber qual o valor atual dessa dívida, já que ela terá a sua quantia alterada devido à aplicação de juros.
 
 |Fórmula|Onde|
 |---|---|
 |<h4>M = C (1 + i .t)|<p>M = montante<p>C = capital inicial<p>J = juros<p>i = taxa de juros<p>t = prazo.|
->Recurso URL
-    
-`POST /calculadora/montante`
->Parametros:
-    
-|Nome||Descrição|
-|---|---|---|
-|capital|requerido|valor do capital inicial|
-|taxa|requerido|taxa que será aplicada|
-prazo|reguerido|prazo da aplicação|
 
 
 #### 2 – Fórmula de juros simples
